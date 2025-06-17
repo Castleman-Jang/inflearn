@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        .container{
+            display: flex;
+            flex-direction: row; 
+            /* x축 : 왼쪽에서 오른쪽 */
+            /* flex-direction: row-reverse;  */
+            /*오른쪽에서 왼쪽*/
+            /* flex-direction: column; */
+            /*  y축 : 위에서 아래로 */
+            /* flex-direction: column-reverse; */
+            /* 아래에서 위로  */
+            flex-wrap: wrap;
+            /* 크기를 지정된 크기를 계속 가져가곘다(창 크기가 달라져도 얘는 안바뀜, 다음줄로 밀려나감 크기 유지를 위해 ) */
+            border: 3px solid red;
+            
+        }
+
+        .item{
+            background-color: greenyellow;
+            border: 2px solid blue;
+            width: 150px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>
