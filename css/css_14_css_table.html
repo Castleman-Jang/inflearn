@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .table th,
+        .table td{
+            border: 1px solid black;
+        }
+
+        .table-striped > tbody > tr:nth-child(2n+1){
+            background-color: aquamarine;
+        }
+        .table-hover > tbody > tr:hover {
+            background-color: yellow;
+        }
+
+        .table > tbody{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table class="table-striped table-hover">
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A1</td>
+                <td>A1</td>
+                <td>A1</td>
+                <td>A1</td>
+                <td>A1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>A2</td>
+                <td>A2</td>
+                <td>A2</td>
+                <td>A2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>A3</td>
+                <td>A3</td>
+                <td>A3</td>
+                <td>A3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>A4</td>
+                <td>A4</td>
+                <td>A4</td>
+                <td>A4</td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td>A5</td>
+                <td>A5</td>
+                <td>A5</td>
+                <td>A5</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
