@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* border */
+        /* border-top, border-right, border-bottom,borderleft */
+        /* 속성값 개수별 차이 */
+        /* border: 5px ->4면 모두 5px */
+        /* border: 5px 10px -> top,bottom은 5px, left,right 10px */
+        /* border: 5px 10px 7px ->top은 5px, right,left는 10px, bottom은 7px */
+        /* border: 5px 10px 7px 8px */
+        div{
+            border: 3px solid red;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .dashed{
+            border-style: dashed;
+        }
+
+        .dotted{
+            border-style: dotted;
+        }
+
+        .solid{
+            border-style: solid;
+        }
+
+        .double{
+            border-style: double;
+        }
+
+        .groove{
+            border-style: groove;
+        }
+
+        .ridge{
+            border-style: ridge;
+        }
+
+        .inset{
+            border-style: inset;
+        }
+
+        .outset{
+            border-style: outset;
+        }
+
+        /* 두께 */
+        .thin{border-width: thin;}
+        .medium{border-width: medium;}
+        .thick{border-width: thick;}
+        
+        .radius{border-radius: 10px;}
+    </style>
+</head>
+<body>
+    <div class="dashed"></div>
+    <div class="dotted"></div>
+    <div class="solid radius" ></div>
+    <div class="double"></div>
+    <div class="groove"></div> <!--얘는 테두리가 파인것 처럼-->
+    <div class="ridge"></div> <!-- 테두리가 튀어나온 것 처럼 보임-->
+    <div class="inset"></div> <!-- 요소가 파인것 처럼-->
+    <div class="outset"></div><!--요소가 튀어나온것 처럼 보임-->
+    <div class="solid thick"></div>
+    <div class="solid thin"></div>
+    <div class="solid medium"></div>
+</body>
+</html>
